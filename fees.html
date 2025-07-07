@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>फीस प्रबंधन - बी एस इंटर कॉलेज</title>
+  <link rel="stylesheet" href="admin-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>फीस प्रबंधन</h1>
+  </header>
+  <main class="main-content">
+    <div class="card">
+      <h2><i class="fas fa-rupee-sign"></i> छात्र फीस दर्ज करें</h2>
+      <form>
+        <label>छात्र का नाम: <input type="text" placeholder="नाम दर्ज करें"></label>
+        <label>कक्षा: <input type="text" placeholder="कक्षा"></label>
+        <label>राशि (₹): <input type="number" placeholder="फीस राशि"></label>
+        <label>तारीख: <input type="date"></label>
+        <button type="submit" class="quick-btn">संग्रह करें</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-table"></i> फीस रिकॉर्ड</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>नाम</th>
+            <th>कक्षा</th>
+            <th>राशि (₹)</th>
+            <th>तारीख</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>राहुल वर्मा</td>
+            <td>10वीं</td>
+            <td>1200</td>
+            <td>10 जून 2025</td>
+          </tr>
+          <tr>
+            <td>साक्षी गुप्ता</td>
+            <td>12वीं</td>
+            <td>1500</td>
+            <td>9 जून 2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

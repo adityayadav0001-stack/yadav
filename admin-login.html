@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Login - बी एस इंटर कॉलेज</title>
+  <style>
+    body {
+      background-color: #fffdd0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 380px;
+      text-align: center;
+    }
+    .login-box h2 {
+      color: #ff8800;
+      margin-bottom: 20px;
+    }
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .login-box button {
+      background-color: #ff8800;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 18px;
+      width: 100%;
+      cursor: pointer;
+    }
+    .login-box button:hover {
+      background-color: #e67300;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Admin Login</h2>
+    <form action="admin-dashboard.html" method="get">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
+

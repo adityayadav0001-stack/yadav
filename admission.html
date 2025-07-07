@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>ऑनलाइन प्रवेश फॉर्म</title>
+  <link rel="stylesheet" href="admission.css">
+</head>
+<body>
+  <section class="admission-form">
+    <h2>🎓 ऑनलाइन प्रवेश फॉर्म</h2>
+    <form action="confirmation.html" method="POST">
+      <label>छात्र का नाम:
+        <input type="text" name="studentName" required>
+      </label>
+      <label>कक्षा:
+        <select name="class" required>
+          <option value="">कक्षा चुनें</option>
+          <option>कक्षा 1</option>
+          <option>कक्षा 2</option>
+          <option>कक्षा 3</option>
+          <option>कक्षा 4</option>
+          <option>कक्षा 5</option>
+          <option>कक्षा 6</option>
+          <option>कक्षा 7</option>
+          <option>कक्षा 8</option>
+          <option>कक्षा 9</option>
+          <option>कक्षा 10</option>
+          <option>कक्षा 11</option>
+          <option>कक्षा 12</option>
+        </select>
+      </label>
+      <label>जन्म तिथि:
+        <input type="date" name="dob" required>
+      </label>
+      <label>पिता/अभिभावक का नाम:
+        <input type="text" name="fatherName" required>
+      </label>
+      <label>मोबाइल नंबर:
+        <input type="tel" name="phone" required>
+      </label>
+      <label>पूरा पता:
+        <textarea name="address" required></textarea>
+      </label>
+      <button type="submit">प्रवेश हेतु आवेदन करें</button>
+    </form>
+  </section>
+</body>
+</html>

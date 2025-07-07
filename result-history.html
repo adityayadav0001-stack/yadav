@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>परिणाम इतिहास</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #004080;
+      height: 100vh;
+      padding-top: 20px;
+      position: fixed;
+      color: white;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .sidebar a:hover {
+      background-color: #0066cc;
+    }
+
+    .main-content {
+      margin-left: 220px;
+      padding: 30px;
+      flex-grow: 1;
+    }
+
+    .result-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .result-card h3 {
+      color: #004080;
+    }
+
+    .result-card p {
+      font-size: 16px;
+    }
+
+    .download-btn {
+      background-color: #004080;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .download-btn:hover {
+      background-color: #0066cc;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+
+      .main-content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>📚 छात्र</h2>
+    <a href="student-dashboard.html">🏠 डैशबोर्ड</a>
+    <a href="profile.html">📝 मेरी प्रोफ़ाइल</a>
+    <a href="attendance.html">📊 उपस्थिति</a>
+    <a href="#">📁 परिणाम इतिहास</a>
+    <a href="#">🔒 लॉगआउट</a>
+  </div>
+
+  <div class="main-content">
+    <h1>📁 परिणाम इतिहास</h1>
+    <div class="result-card">
+      <h3>2025 प्रथम सेमेस्टर</h3>
+      <p>कुल अंक: 450/500</p>
+      <p>प्राप्त अंक: 420/500</p>
+      <button class="download-btn" onclick="window.open('uploads/result-2025-sem1.pdf')">डाउनलोड करें</button>
+    </div>
+
+    <div class="result-card">
+      <h3>2024 द्वितीय सेमेस्टर</h3>
+      <p>कुल अंक: 500/500</p>
+      <p>प्राप्त अंक: 480/500</p>
+      <button class="download-btn" onclick="window.open('uploads/result-2024-sem2.pdf')">डाउनलोड करें</button>
+    </div>
+  </div>
+
+</body>
+</html>

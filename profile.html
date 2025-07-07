@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>प्रोफ़ाइल</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #004080;
+      height: 100vh;
+      padding-top: 20px;
+      position: fixed;
+      color: white;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .sidebar a:hover {
+      background-color: #0066cc;
+    }
+
+    .main-content {
+      margin-left: 220px;
+      padding: 30px;
+      flex-grow: 1;
+    }
+
+    .profile-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 50%;
+      margin: auto;
+    }
+
+    .profile-card h3 {
+      color: #004080;
+      text-align: center;
+    }
+
+    .profile-card p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .profile-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 10px auto;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+
+      .main-content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>📚 छात्र</h2>
+    <a href="student-dashboard.html">🏠 डैशबोर्ड</a>
+    <a href="#">📝 मेरी प्रोफ़ाइल</a>
+    <a href="attendance.html">📊 उपस्थिति</a>
+    <a href="result-history.html">📁 परिणाम इतिहास</a>
+    <a href="#">🔒 लॉगआउट</a>
+  </div>
+
+  <div class="main-content">
+    <h1>👋 छात्र की प्रोफ़ाइल</h1>
+    <div class="profile-card">
+      <img src="profile-pic.jpg" alt="प्रोफ़ाइल चित्र">
+      <h3>राहुल शर्मा</h3>
+      <p>📚 कक्षा: 10वीं</p>
+      <p>🎓 विषय: गणित, विज्ञान, हिंदी</p>
+      <p>📅 जन्म तिथि: 15 अक्टूबर 2005</p>
+      <p>📞 संपर्क: +91-8006209405</p>
+      <p>📧 ईमेल: rahul123@gmail.com</p>
+    </div>
+  </div>
+
+</body>
+</html>

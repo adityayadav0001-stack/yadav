@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>फीस भुगतान - सरस्वती विद्या मंदिर</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background-color: #f9f9f9; margin: 0; padding: 0; }
+    header { background-color: #004080; color: white; padding: 20px; text-align: center; }
+    section {
+      background: white;
+      width: 80%;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004080;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>फीस भुगतान पोर्टल</h1>
+  <p>सरस्वती विद्या मंदिर - ज्ञानपुर, प्रयागराज</p>
+</header>
+
+<section>
+  <h2>फीस भुगतान करें</h2>
+  <form action="#" method="post">
+    <label>छात्र का नाम:</label>
+    <input type="text" name="name" required>
+
+    <label>कक्षा:</label>
+    <input type="text" name="class" required>
+
+    <label>रोल नंबर:</label>
+    <input type="text" name="roll" required>
+
+    <label>भुगतान राशि (₹):</label>
+    <input type="number" name="amount" required>
+
+    <button type="submit">Pay Now</button>
+  </form>
+</section>
+
+</body>
+</html>

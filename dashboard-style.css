@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Topbar/Header */
+.topbar {
+  background: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Login Box Style */
+.login-box {
+  background: white;
+  padding: 40px;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-box h2 {
+  color: #ff8800;
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.login-box button {
+  background-color: #ff8800;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #e67300;
+}
+
+/* Dashboard Container */
+.container {
+  display: flex;
+  min-height: calc(100vh - 70px);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #003060;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 15px 0;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #ffcc99;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Dashboard Cards */
+.stats, .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.card p {
+  font-size: 22px;
+  margin: 0;
+  color: #ff8800;
+}
+
+.card i {
+  font-size: 28px;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+/* Welcome Message for Student */
+.welcome {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.welcome h3 {
+  color: #004080;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .sidebar a {
+    margin: 10px;
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  .login-box {
+    margin-top: 40px;
+    padding: 30px;
+  }
+}
